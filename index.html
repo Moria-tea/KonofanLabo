@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>このファン｜所持品検査室</title>
+    <meta name="description" content="株式会社サムザップが提供するゲームこのすばファンタスティックデイズ（このファン）のメンバー所持リスト作成し、15人パーティーを組むシミュレータツールです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>このファン★所持メンバー検査★15人編成シミュ</h1>
+
+    <div id="members">
+      <p>😢お持ちでないキャラをクリックして外してください😢</p>
+      <p>下の方にある†編成開始†ボタンで15人編成画面になります</p>
+      <p>💡使わないキャラは外しておくと編成しやすいです💡</p>
+      <div class="fukucontainer">
+        <div>メモしておいた復元コードを入れて「復元」ボタンを押すと復帰できます。</div>
+        <div>コードを他人に教えることで所持メンバーを伝えるといった使い方もできます。</div>
+        <div class="fukubtncontainer">
+          <input id="fuku" type="text">
+          <input id="fukuexe" type="button" value="復元">
+        </div>
+        <div class="genzaicontainer">
+          <div>現在の復元コード⇒</div>
+          <div id="fukugentext"></div>
+        </div>
+      </div>
+      <div class="offbtncontainer">
+        <input id="rank1offbtn" type="button" value="★１ 全除外">
+        <input id="rank2offbtn" type="button" value="★２ 全除外">
+        <input id="offbtn" type="button" value="全除外">
+        <input id="onbtn" type="button" value="全選択">
+      </div>
+      <ul id="memberslist">
+      </ul>
+      
+      <div class="partybtncontainer">
+        <input id="partybtn" type="button" value="†編成開始†">
+      </div>
+    </div>
+
+    <div class="invisible" id="party">
+      <p>キャラを枠にドラッグ＆ドロップして編成しましょう</p>
+      <div id="partylist">
+        <!-- <div class="memberframe">
+          <div class="membername">1</div>
+          <div class="charcontainer">
+            <div class="mainchar" id="member1main">メイン</div>
+            <div class="subchar" id="member1sub1">サブ１</div>
+            <div class="subchar" id="member1sub2">サブ２</div>
+          </div>
+        </div>
+        <div class="memberframe">
+          <div class="membername">2</div>
+          <div class="charcontainer">
+            <div class="mainchar" id="member2main">メイン</div>
+            <div class="subchar" id="member2sub1">サブ１</div>
+            <div class="subchar" id="member2sub2">サブ２</div>
+          </div>
+        </div> -->
+
+      </div>
+
+      <div id="membericons">
+      </div>
+
+    </div>
+
+    <footer>
+      当サイトで使用している画像の知的財産権は権利者様に帰属します。<br>
+      削除要請があった場合、速やかに対処いたします。
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
