@@ -92,6 +92,7 @@ p+p{
 
 #memberslist > li.nothing{
   background: black;
+  border-radius: 5px;
 }
 
 #memberslist > li.nothing > div{
@@ -163,6 +164,7 @@ p+p{
   height: 64px;
   margin: 4px;
   border: 1px solid orange;
+  border-radius: 5px;
   background: #fdc;
   display: flex;
   justify-content: center;
@@ -174,6 +176,7 @@ p+p{
   height: 48px;
   margin: 1px;
   border: 1px solid orange;
+  border-radius: 5px;
   background: #dfc;
   display: flex;
   justify-content: center;
