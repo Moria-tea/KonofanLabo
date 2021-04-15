@@ -127,8 +127,18 @@ rank4offbtn.addEventListener('click', ()=>{
 
 const fukuexe = document.getElementById('fukuexe');
 fukuexe.addEventListener('click', ()=>{
-  passfukki(memli, imgs);
+  const fukuID = document.getElementById('fuku').value;
+  passfukki(memli, imgs, fukuID);
 });
+
+
+//再訪問時復帰
+const fukugen = localStorage.getItem('konofanchars');
+if (fukugen){
+  passfukki(memli, imgs, fukugen);
+  const fukugentext = document.getElementById('fukugentext');
+  fukugentext.textContent = fukugen;
+}
 
 // ********** 編成画面処理 ****************************************
 
@@ -336,11 +346,12 @@ function passwd(memli,imgs){
 
   const fukugentext = document.getElementById('fukugentext');
   fukugentext.textContent = pswd;
+  localStorage.setItem('konofanchars', pswd);
 }
 
 
 
-function passfukki(memli,imgs){
+function passfukki(memli,imgs,fukuID){
 
   let MemberIndex = [];
 
@@ -353,7 +364,6 @@ function passfukki(memli,imgs){
     });
   }
 
-  const fukuID = document.getElementById('fuku').value;
   let moji = '';
   let IDbin = '';
 
