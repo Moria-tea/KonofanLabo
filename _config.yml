@@ -1,2 +1,15 @@
 theme: jekyll-theme-cayman
 google_analytics: UA-194288517-1
+
+url: "https://moria-tea.github.io/KonofanLabo/"
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "monthly"
+    priority_name: "0.5"
