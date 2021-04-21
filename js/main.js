@@ -125,10 +125,31 @@ rank4offbtn.addEventListener('click', ()=>{
 });
 
 
+//復元ボタンによる復元
 const fukuexe = document.getElementById('fukuexe');
 fukuexe.addEventListener('click', ()=>{
   const fukuID = document.getElementById('fuku').value;
   passfukki(memli, imgs, fukuID);
+});
+
+
+//クリップボードにコピー
+let timerID;
+const fukucopy = document.getElementById('fukucopy');
+fukucopy.addEventListener('click', ()=>{
+  const fukugentext = document.getElementById('fukugentext');
+  document.getSelection().selectAllChildren(fukugentext);
+  document.execCommand("copy");
+  
+  const copycomment = document.getElementById('copycomment');
+  copycomment.classList.remove('invisible');
+  
+  if (typeof timerID !== 'undefined') {
+    clearTimeout(timerID);
+  }
+  timerID = setTimeout(()=>{
+    copycomment.classList.add('invisible');
+  },1000);
 });
 
 

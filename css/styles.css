@@ -48,6 +48,7 @@ p+p{
 .genzaicontainer{
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 #fukugentext{
@@ -55,12 +56,38 @@ p+p{
   padding: 2px;
   width: 400px;
   height: 18px;
-  font-size: 16px;
   border: 1px dashed #222;
   border-radius: 2px;
   background: #feeeee;
+  font-size: 16px;
   font-family: monospace;
-  font-weight: bold
+  font-weight: bold;
+  line-height: 16px;
+}
+
+#fukucopy{
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+#copycomment{
+	position: absolute;
+	width: 100px;
+	top: 28px;
+	left: 520px;
+	opacity: 1;
+  animation: appear 0.5s;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .offbtncontainer{
