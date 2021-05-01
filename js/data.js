@@ -29,6 +29,7 @@ const imgs = [
   {id:1014132,    name:'aqua',      rare:4,   element:'wind'},
   {id:1014148,    name:'aqua',      rare:4,   element:'earth'},
   {id:1014150,    name:'aqua',      rare:4,   element:'water'},
+  {id:1014155,    name:'aqua',      rare:4,   element:'light'},
   {id:1021100,    name:'megumin',   rare:1,   element:'fire'},
   {id:1022100,    name:'megumin',   rare:2,   element:'fire'},
   {id:1022102,    name:'megumin',   rare:2,   element:'thunder'},
@@ -57,6 +58,7 @@ const imgs = [
   {id:1034123,    name:'dakunesu',  rare:4,   element:'none'},
   {id:1034135,    name:'dakunesu',  rare:4,   element:'none'},
   {id:1034150,    name:'dakunesu',  rare:4,   element:'light'},
+  {id:1034155,    name:'dakunesu',  rare:4,   element:'wind'},
   {id:1041100,    name:'chris',     rare:1,   element:'wind'},
   {id:1042100,    name:'chris',     rare:2,   element:'light'},
   {id:1042102,    name:'chris',     rare:2,   element:'thunder'},
@@ -237,6 +239,8 @@ const imgs = [
   {id:1204100,    name:'komekko',   rare:4,   element:'fire'},
   {id:1474132,    name:'emilia',    rare:4,   element:'water'},
   {id:1504132,    name:'rem',       rare:4,   element:'water'},
+  {id:1604155,    name:'bell',      rare:4,   element:'fire'},
+  {id:1654155,    name:'aizu',      rare:4,   element:'wind'},
 ];
 
 const MemberTable = [ //キャラ追加時はケツに
@@ -476,4 +480,8 @@ const MemberTable = [ //キャラ追加時はケツに
   1044127 ,
   1193127 ,
   1023154 ,
+  1014155 ,
+  1034155 ,
+  1604155 ,
+  1654155 ,
 ];
